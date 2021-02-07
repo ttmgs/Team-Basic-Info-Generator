@@ -13,58 +13,32 @@ const render = require("./lib/htmlRenderer");
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
-var inquirer = require('inquirer');
-inquirer
-  .prompt([
 
-questions = [
-     {
-        type: 'input',
-        name: 'members',
-        message: 'How many team members do you want?',
-        choices: ['1', '2', '3']
-     }
- ]
-
-
-
-
-
-
-
-])
-  .then(answers => {
-    const managerinfo = new Manager [
-        {
-            id: "1",
-            emai: "johndoe@gmail.com",
-            office: "1"
-        }
-    ],
-    
-    const engineerinfo = new Engineer [
-        {
-            id: "2",
-            email: "smith@gmail.com",
-            github: "smith223"
-        }
-    ]
-    
-    const interninfo = new Intern [
-        {
-            id: "3",
-            email: "alex@gmail.com",
-            school: "University of Texas"
-        }
-    ]
-  })
-  .catch(error => {
-    if(error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else when wrong
+const managerinfo = new Manager [
+    {
+        id: userInput,
+        emai: "johndoe@gmail.com",
+        office: "1"
     }
-  });
+],
+
+const engineerinfo = new Engineer [
+    {
+        id: "313",
+        email: "smith@gmail.com",
+        github: "smith223"
+    }
+]
+
+const interninfo = new Intern [
+    {
+        id: "314",
+        email: "alex@gmail.com",
+        school: "University of Texas"
+    }
+]
+
+
 
 
 
@@ -72,14 +46,6 @@ questions = [
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
 // generate and return a block of HTML including templated divs for each employee!
-
-render(emplo)
-
-
-
-
-
-
 
 // After you have your html, you're now ready to create an HTML file using the HTML
 // returned from the `render` function. Now write it to a file named `team.html` in the
