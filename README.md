@@ -5,6 +5,8 @@ This is a basic team generator that allows you to bulid your own employee team. 
 
 # Video Link
 https://drive.google.com/file/d/1qXedANYkZp4SZLOvGUg1k8WlB8IpF9Xb/view
+![](name-of-giphy.gif)
+
 
 
 ## Usage
